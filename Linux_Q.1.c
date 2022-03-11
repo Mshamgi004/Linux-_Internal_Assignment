@@ -14,7 +14,7 @@ int main()
 	char Rbuff[1000];
 	
 	int fd1 = open("input.txt", O_RDONLY, 777);       //open input file 	
-	int fd2 = open("output.txt",O_RDWR, 777);	  //open output file
+	int fd2 = open("output.txt",O_CREAT | O_RDWR, 777);	  //open output file
 	int len;
 	
 	//reading from input.txt
